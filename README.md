@@ -1,14 +1,17 @@
-# Software-Defect-Prediction-JM1
+# Software-Defect-Prediction
 
-This project uses the dataset JM1 to predict software defects using Artificial Neural Networks
-
-# Link to Dataset:
-https://datahub.io/machine-learning/jm1/r/0.html
+This project uses a combination of Deep Learning and Machine Learning to predict software defects.
 
 # Description
-The program uses the metrics provided in the JM1 dataset to predict software defects.
-The model of this program uses 3 fully connected layers with hidden nodes of 512, 256 and 1 respectively.
+
+A Neural Network is deployed as a feature extractor and an SVM based classifier is used to predict whther the given software has a defect or not.
+
+The model is composed of 6 layers of Dense Network to perform the feature extraction.
 All the layers but last uses ReLU activation while the last layer uses a Sigmoid activation function.
 
-The Loss function used here is: Binary Cross Entropy
+The Loss function used here is: Hinge Loss
 and an Adam optimizer is used
+
+# Dataset
+
+For this study we have performed analysis on the JM1, AR1, KC2 and MC1 datasets.
